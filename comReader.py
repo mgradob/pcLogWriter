@@ -1,35 +1,51 @@
+import time
+
 __author__ = 'Adriana'
 
 import serial
 import comFunctions
-import writeToFile
 from writeToFile import *
-import atexit
 
 print("Available ports:\n")
 
 portList = comFunctions.getAvailablePorts()
 
+if len(portList) < 1:
+    print("No COM ports found")
+else:
+    print(portList)
+    print("Select a COM port:\nCOM")
+    selectedPort = int(input())-1
 
-while 1:
-        serialPort = serial.Serial("/dev/tty.usbserial-AH01CRV0")
+    while 1:
+        serialPort = serial.Serial(selectedPort)
 
-        #serialPort.write(bytearray("Write data:", 'ascii'))
+        startTime = time.clock()
 
         while serialPort.inWaiting() < 1:
-            pass
+            elapsedTime = time.clock() - startTime
+            #print(elapsedTime)
 
-        dataIn = serialPort.readline()
 
-        formattedData = comFunctions.formatMoistureData(dataIn)
+            if elapsedTime > 300:
+                print('Time limit elapsed')
+                serialPort.close()
+                break
+            else:
+                pass
 
-        for x in range(0, len(dataIn)):
-            print(dataIn[x])
+        if serialPort.isOpen():
+            dataIn = (serialPort.readline())
 
-        if formattedData == "Timeout received":
-            writeToFile(formattedData)
+            formattedData = comFunctions.formatMoistureData(dataIn)
+
+            print(formattedData)
+
+            if formattedData == "Timeout received":
+                writeToFile(formattedData)
+            else:
+                writeToFile(formattedData)
+
+            serialPort.close()
         else:
-            writeToFile(formattedData)
-            writeToFile.setDate(datetime.datetime.now())
-
-        serialPort.close()
+            pass

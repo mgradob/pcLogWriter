@@ -1,5 +1,7 @@
 __author__ = 'Adriana'
-import datetime
+
+from time import strftime
+import os
 
 # Make file of data received ---------------------------------------
 date = None
@@ -12,12 +14,16 @@ def getDate():
     global date
     return date
 
-
-
 def writeToFile(dataToWrite):
-    with open("dataLog%s.txt" % (str(getDate())), 'w') as file:
-        for dataLineToWrite in dataToWrite:
-            file.write(str(dataLineToWrite) + "\n")
+    if os.path.exists(os.path.abspath('dataLog.txt')):
+        with open('dataLog.txt', 'a+') as file:
+             print(dataToWrite)
+             file.write(dataToWrite + "," + strftime("%Y-%m-%d %H:%M") + '\n')
+    else:
+        print('Log file created')
+        with open("dataLog.txt", 'w') as file:
+             print(dataToWrite)
+             file.write(dataToWrite + "," + strftime("%Y-%m-%d %H:%M") + '\n')
 
     print("Data written successfully")
 #-------------------------------------------------------------------
