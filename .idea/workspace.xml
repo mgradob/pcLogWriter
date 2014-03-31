@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21d53402-445c-4d95-8fa5-b7bde3c5a7b3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comFunctions.py" afterPath="$PROJECT_DIR$/comFunctions.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pcLogWriter.iws" />
@@ -24,7 +25,35 @@
     <favorites_list name="pcLogWriter" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="comFunctions.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comFunctions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="136" column="0" selection-start="5215" selection-end="5215" vertical-scroll-proportion="0.0" vertical-offset="2139" max-vertical-offset="3009">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comReader.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/comReader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="0" selection-start="801" selection-end="801" vertical-scroll-proportion="0.48758864" vertical-offset="388" max-vertical-offset="952">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Logs.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Logs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="12" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="833">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -115,12 +144,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="C:/Program Files (x86)/Atlassian/SourceTree/SourceTree.exe" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -343,28 +372,52 @@
       <created>1396280915869</created>
       <updated>1396280915869</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Corrected the uploading, now ads the time it uploads data.">
+      <created>1396305318398</created>
+      <updated>1396305318398</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961783" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32711864" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24920128" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.183172" sideWeight="0.68537414" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39965987" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.183172" sideWeight="0.60169494" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3983051" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31462586" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31355932" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -383,10 +436,17 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/comFunctions.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -399,11 +459,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/writeToFile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <folding>
-            <element signature="e#24#49#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comReader.py">
@@ -420,11 +476,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/writeToFile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="45" selection-start="402" selection-end="450" vertical-scroll-proportion="0.0" vertical-offset="115" max-vertical-offset="595">
-          <folding>
-            <element signature="e#24#49#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="20" column="45" selection-start="402" selection-end="450" vertical-scroll-proportion="0.0" vertical-offset="115" max-vertical-offset="595" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comReader.py">
@@ -441,18 +493,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/writeToFile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="29" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="527">
-          <folding>
-            <element signature="e#24#49#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="16" column="29" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="527" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xively/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8262">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8262" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xively/managers.py">
@@ -465,41 +511,33 @@
         <state line="11" column="0" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1870" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Logs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="12" selection-start="136" selection-end="136" vertical-scroll-proportion="-0.3024911" vertical-offset="255" max-vertical-offset="833">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/writeToFile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="77" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0" vertical-offset="16" max-vertical-offset="578">
-          <folding>
-            <element signature="e#24#49#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="25" column="77" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0" vertical-offset="16" max-vertical-offset="578" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apiFunctions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="67" selection-start="1727" selection-end="1727" vertical-scroll-proportion="0.0" vertical-offset="305" max-vertical-offset="867">
-          <folding>
-            <element signature="e#30#43#0" expanded="true" />
-          </folding>
+        <state line="41" column="67" selection-start="1727" selection-end="1727" vertical-scroll-proportion="0.0" vertical-offset="305" max-vertical-offset="867" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="12" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="833">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comFunctions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="55" selection-start="4842" selection-end="4842" vertical-scroll-proportion="0.0" vertical-offset="1819" max-vertical-offset="3009">
+        <state line="136" column="0" selection-start="5215" selection-end="5215" vertical-scroll-proportion="0.0" vertical-offset="2139" max-vertical-offset="3009">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comReader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="12" selection-start="882" selection-end="882" vertical-scroll-proportion="0.54626334" vertical-offset="390" max-vertical-offset="952">
+        <state line="39" column="0" selection-start="801" selection-end="801" vertical-scroll-proportion="0.48758864" vertical-offset="388" max-vertical-offset="952">
           <folding />
         </state>
       </provider>
