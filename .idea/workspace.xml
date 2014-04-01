@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21d53402-445c-4d95-8fa5-b7bde3c5a7b3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apiFunctions.py" afterPath="$PROJECT_DIR$/apiFunctions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pcLogWriter.iml" afterPath="$PROJECT_DIR$/.idea/pcLogWriter.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pcLogWriter.iws" />
@@ -28,16 +31,25 @@
       <file leaf-file-name="comFunctions.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comFunctions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="0" selection-start="5215" selection-end="5215" vertical-scroll-proportion="0.0" vertical-offset="2139" max-vertical-offset="3009">
+            <state line="136" column="0" selection-start="5215" selection-end="5215" vertical-scroll-proportion="0.0" vertical-offset="1007" max-vertical-offset="2655">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comReader.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="apiFunctions.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apiFunctions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="8" selection-start="788" selection-end="788" vertical-scroll-proportion="0.29161605" vertical-offset="0" max-vertical-offset="823">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comReader.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comReader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="801" selection-end="801" vertical-scroll-proportion="0.48932385" vertical-offset="388" max-vertical-offset="952">
+            <state line="39" column="0" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
               <folding />
             </state>
           </provider>
@@ -46,7 +58,7 @@
       <file leaf-file-name="Logs.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Logs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="12" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="833">
+            <state line="5" column="12" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
               <folding />
             </state>
           </provider>
@@ -73,16 +85,15 @@
         <option value="$PROJECT_DIR$/LogsClass.py" />
         <option value="$PROJECT_DIR$/comReader.py" />
         <option value="$PROJECT_DIR$/writeToFile.py" />
-        <option value="$PROJECT_DIR$/apiFunctions.py" />
         <option value="$PROJECT_DIR$/comFunctions.py" />
+        <option value="$PROJECT_DIR$/apiFunctions.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="y" value="22" />
+    <option name="width" value="1680" />
+    <option name="height" value="967" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -121,10 +132,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 3.3.2 (C:/Python33/python.exe) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -403,28 +410,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="0" y="22" width="1680" height="967" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961783" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32711864" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24920128" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.183172" sideWeight="0.60169494" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18264015" sideWeight="0.60169494" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3983051" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31355932" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31257343" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -453,6 +465,27 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/comFunctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="0" selection-start="5215" selection-end="5215" vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="2715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comReader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="12" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/comFunctions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="34" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1734">
@@ -519,14 +552,16 @@
         <state line="25" column="77" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0" vertical-offset="16" max-vertical-offset="578" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apiFunctions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="67" selection-start="1727" selection-end="1727" vertical-scroll-proportion="0.0" vertical-offset="305" max-vertical-offset="867" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Logs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="12" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comReader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
           <folding />
         </state>
       </provider>
@@ -538,9 +573,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comReader.py">
+    <entry file="file://$PROJECT_DIR$/apiFunctions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="801" selection-end="801" vertical-scroll-proportion="0.48932385" vertical-offset="388" max-vertical-offset="952">
+        <state line="18" column="8" selection-start="788" selection-end="788" vertical-scroll-proportion="0.29161605" vertical-offset="0" max-vertical-offset="823">
           <folding />
         </state>
       </provider>

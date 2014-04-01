@@ -16,7 +16,7 @@ def send_moisture_data(moisture_log_1=Logs.MoistureLog, moisture_log_2=Logs.Mois
         xively.Datastream('HM3_S1', current_value=moisture_log_1.moisture3, at=now),
         xively.Datastream('HM1_S2', current_value=moisture_log_2.moisture1, at=now),
         xively.Datastream('HM2_S2', current_value=moisture_log_2.moisture2, at=now),
-        xively.Datastream('HM3_S2', current_value=moisture_log_2.moisture1, at=now)
+        xively.Datastream('HM3_S2', current_value=moisture_log_2.moisture3, at=now)
     ]
     feed.update()
 
