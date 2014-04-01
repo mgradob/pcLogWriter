@@ -94,34 +94,12 @@ def formatMoistureData(dataIn):
         timeoutLog.timeout_climate_node = str(int(dataIn[49]))
         timeoutLog.timeout_pump_node = str(int(dataIn[50]))
 
-    # Second protocol, reading only 6 bytes, 3 pairs of humidity
-    #     # Get moisture higher byte, "xx.__"
-    #     moistureLog["moistureHB1"] = str(dataIn[15])
-    #     # Get moisture lower byte, "__.xx"
-    #     moistureLog["moistureLB1"] = str(dataIn[16])
-    #     # Get moisture higher byte, "xx.__"
-    #     moistureLog["moistureHB2"] = str(dataIn[17])
-    #     # Get moisture lower byte, "__.xx"
-    #     moistureLog["moistureLB2"] = str(dataIn[18])
-    #     # Get moisture higher byte, "xx.__"
-    #     moistureLog["moistureHB3"] = str(dataIn[19])
-    #     # Get moisture lower byte, "__.xx"
-    #     moistureLog["moistureLB3"] = str(dataIn[20])
-    #     # Get moisture higher byte, "xx.__"
-    #     moistureLog["moistureHB4"] = str(dataIn[21])
-    #     # Get moisture lower byte, "__.xx"
-    #     moistureLog["moistureLB4"] = str(dataIn[22])
-    #     # Get moisture higher byte, "xx.__"
-    #     moistureLog["moistureHB5"] = str(dataIn[23])
-    #     # Get moisture lower byte, "__.xx"
-    #     moistureLog["moistureLB5"] = str(dataIn[24])
-    #     # Get moisture higher byte, "xx.__"
-    #     moistureLog["moistureHB6"] = str(dataIn[25])
-    #     # Get moisture lower byte, "__.xx"
-    #     moistureLog["moistureLB6"] = str(dataIn[26])
-
-        formattedData = moistureLog1.moisture1 + ',' + moistureLog1.moisture2 + ',' + moistureLog1.moisture3 + ',' + \
-                        moistureLog2.moisture1 + ',' + moistureLog2.moisture2 + ',' + moistureLog2.moisture3
+        formattedData = timeoutLog.consolidate + ',' + moistureLog1.moisture1 + ',' + moistureLog1.moisture2 + ',' + \
+                        moistureLog1.moisture3 + ',' + moistureLog2.moisture1 + ',' + moistureLog2.moisture2 + ',' + \
+                        moistureLog2.moisture3 + ',' + weatherLog.radiation + ',' + weatherLog.atmospheric_humidity +\
+                        "," + weatherLog.atmospheric_temperature + ',' + weatherLog.wind_speed + ',' +\
+                        pumpLog.relay_status + ',' + timeoutLog.timeout_DAAD + ',' + timeoutLog.timeout_DA55 + ',' + \
+                        timeoutLog.timeout_c + ','
 
         # Send data to Xively API
         now = datetime.datetime.utcnow()
@@ -131,7 +109,7 @@ def formatMoistureData(dataIn):
         apiFunctions.send_consolidate_data(timeoutLog, now)
 
     except Exception:
-        formattedData = "Timeout received"
+        print("Exception, invalid data received")
         pass
 
     return formattedData

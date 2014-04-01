@@ -17,12 +17,12 @@ def getDate():
 def writeToFile(dataToWrite):
     if os.path.exists(os.path.abspath('dataLog.txt')):
         with open('dataLog.txt', 'a+') as file:
-             print(dataToWrite)
+             #print(dataToWrite)
              file.write(dataToWrite + "," + strftime("%Y-%m-%d %H:%M") + '\n')
     else:
         print('Log file created')
         with open("dataLog.txt", 'w') as file:
-             print(dataToWrite)
+             #print(dataToWrite)
              file.write(dataToWrite + "," + strftime("%Y-%m-%d %H:%M") + '\n')
 
     print("Data written successfully")

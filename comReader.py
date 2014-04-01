@@ -27,7 +27,7 @@ else:
             #print(elapsedTime)
 
 
-            if elapsedTime > 300:
+            if elapsedTime > 360:
                 print('Time limit elapsed')
                 serialPort.close()
                 break
@@ -41,10 +41,7 @@ else:
 
             print(formattedData)
 
-            if formattedData == "Timeout received":
-                writeToFile(formattedData)
-            else:
-                writeToFile(formattedData)
+            writeToFile(formattedData)
 
             serialPort.close()
         else:
