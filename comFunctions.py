@@ -112,42 +112,7 @@ def formatMoistureData(dataIn):
         print("Exception, invalid data received")
         pass
 
-    return formattedData
-
-    # Generic stuff, for all protocols
-    # Get date value
-    #date = datetime.datetime.now('%Y-%m-%d %H:%M')
-    #date = strftime("%Y-%m-%d %H:%M")
-    #moistureLog["date"] = str(date)
-
-    #if moistureLog["timeout"] == "1":
-    #    formattedData = "Timeout received, %s" % ([moistureLog["date"]])
-    #    return formattedData
-    # if handshakeLog.soh != "1" or handshakeLog.eot != "4":
-    #     formattedData = ["Message corrupted"]
-    #     return formattedData
-    # else:
-            # dataHeight1 = "%s,%s,%s.%s,%s,%s,%s" % (moistureLog["area_id"], moistureLog["height1"], moistureLog["moistureHB1"], moistureLog["moistureLB1"],
-            #                                              moistureLog["min"], moistureLog["max"], moistureLog["date"])
-            # dataHeight2 = "%s,%s,%s.%s,%s,%s,%s" % (moistureLog["area_id"], moistureLog["height2"], moistureLog["moistureHB2"], moistureLog["moistureLB2"],
-            #                                              moistureLog["min"], moistureLog["max"], moistureLog["date"])
-            # dataHeight3 = "%s,%s,%s.%s,%s,%s,%s" % (moistureLog["area_id"], moistureLog["height3"], moistureLog["moistureHB3"], moistureLog["moistureLB3"],
-            #                                              moistureLog["min"], moistureLog["max"], moistureLog["date"])
-
-            #dataHeight1 = "Altura 1: %s.%s\t %s" % (moistureLog["moistureHB1"], moistureLog["moistureLB1"], moistureLog["date"])
-            #dataHeight2 = "Altura 2: %s.%s\t %s" % (moistureLog["moistureHB2"], moistureLog["moistureLB2"], moistureLog["date"])
-            #dataHeight3 = "Altura 3: %s.%s\t %s" % (moistureLog["moistureHB3"], moistureLog["moistureLB3"], moistureLog["date"])
-
-        # dataToWrite = "%s.%s,%s.%s,%s.%s,%s.%s,%s.%s,%s.%s,%s,%s,%s" % \
-        #                   (moistureLog["moistureHB1"], moistureLog["moistureLB1"],
-        #                    moistureLog["moistureHB2"], moistureLog["moistureLB2"],
-        #                    moistureLog["moistureHB3"], moistureLog["moistureLB3"],
-        #                    moistureLog["moistureHB4"], moistureLog["moistureLB4"],
-        #                    moistureLog["moistureHB5"], moistureLog["moistureLB5"],
-        #                    moistureLog["moistureHB6"], moistureLog["moistureLB6"],
-        #                    moistureLog["timeout1"], moistureLog["timeout2"],
-        #                    moistureLog["date"])
-
-    #return formattedData
-
-#-------------------------------------------------------------------
+    try:
+        return formattedData
+    except Exception:
+        return 'Exception, incorrect data received'
