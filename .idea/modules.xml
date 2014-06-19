@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Programming Excercises/.idea/Programming Excercises.iml" filepath="$PROJECT_DIR$/../Programming Excercises/.idea/Programming Excercises.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/pcLogWriter.iml" filepath="$PROJECT_DIR$/.idea/pcLogWriter.iml" />
     </modules>
   </component>

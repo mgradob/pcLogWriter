@@ -34,7 +34,7 @@ else:
                 pass
 
         if serialPort.isOpen():
-            dataIn = (serialPort.read(size=53)) #change to 55
+            dataIn = (serialPort.read(size=55))
 
             formattedData = comFunctions.formatMoistureData(dataIn)
 

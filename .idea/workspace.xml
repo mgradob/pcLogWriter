@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21d53402-445c-4d95-8fa5-b7bde3c5a7b3" name="Default" comment="Replaced timeout and invalid data messages with t,t,t,t,t,t... and i,i,i,i... messages, also writes on log the last value received.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataLog.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logs.py" afterPath="$PROJECT_DIR$/Logs.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apiFunctions.py" afterPath="$PROJECT_DIR$/apiFunctions.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comFunctions.py" afterPath="$PROJECT_DIR$/comFunctions.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comReader.py" afterPath="$PROJECT_DIR$/comReader.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pcLogWriter.iml" afterPath="$PROJECT_DIR$/.idea/pcLogWriter.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/writeToFile.py" afterPath="$PROJECT_DIR$/writeToFile.py" />
     </list>
     <ignored path="pcLogWriter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,10 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="apiFunctions.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="apiFunctions.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apiFunctions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="89" selection-start="1843" selection-end="1843" vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="850">
+            <state vertical-scroll-proportion="0.2701252" vertical-offset="291" max-vertical-offset="850">
+              <caret line="28" column="86" selection-start-line="28" selection-start-column="86" selection-end-line="28" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -45,17 +44,21 @@
       <file leaf-file-name="comReader.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comReader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="61" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="850">
+            <state vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="850">
+              <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comFunctions.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="comFunctions.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comFunctions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="44" selection-start="4057" selection-end="4057" vertical-scroll-proportion="0.539823" vertical-offset="1361" max-vertical-offset="2057">
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="2142">
+              <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+              <folding>
+                <element signature="e#24#37#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,7 +66,8 @@
       <file leaf-file-name="Logs.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Logs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="29" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="850">
+            <state vertical-scroll-proportion="0.0" vertical-offset="290" max-vertical-offset="850">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -90,16 +94,16 @@
         <option value="$PROJECT_DIR$/LogsClass.py" />
         <option value="$PROJECT_DIR$/writeToFile.py" />
         <option value="$PROJECT_DIR$/Logs.py" />
+        <option value="$PROJECT_DIR$/comFunctions.py" />
         <option value="$PROJECT_DIR$/comReader.py" />
         <option value="$PROJECT_DIR$/apiFunctions.py" />
-        <option value="$PROJECT_DIR$/comFunctions.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1380" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -116,7 +120,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -128,7 +132,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -149,11 +152,12 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="C:/Program Files (x86)/Git/bin/git.exe" />
     <property name="FullScreen" value="false" />
@@ -417,27 +421,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1380" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961783" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265306" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24920128" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09605361" sideWeight="0.67118645" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09598214" sideWeight="0.67118645" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6213922" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3820034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38160136" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293718" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32767403" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32767403" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -455,13 +459,16 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24920128" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13104989" sideWeight="0.67118645" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3846154" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3846154" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
   </component>
@@ -488,305 +495,416 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Logs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="833">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="833">
+          <caret line="11" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comFunctions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="77" selection-start="3853" selection-end="3858" vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="2040">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="2040">
+          <caret line="100" column="77" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apiFunctions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="73" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="867">
+        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="867">
+          <caret line="26" column="73" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="833">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="833">
+          <caret line="11" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comFunctions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="82" selection-start="3033" selection-end="3033" vertical-scroll-proportion="0.0" vertical-offset="1513" max-vertical-offset="2040">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1513" max-vertical-offset="2040">
+          <caret line="89" column="82" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apiFunctions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="73" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="867">
+        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="867">
+          <caret line="26" column="73" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="12" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="833">
+        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="833">
+          <caret line="5" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comReader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="65" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="850" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comFunctions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="0" selection-start="2927" selection-end="2927" vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="2108">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="850">
+          <caret line="21" column="65" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/writeToFile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="72" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="595" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comReader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="46" selection-start="1013" selection-end="1038" vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="918" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comFunctions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="0" selection-start="2927" selection-end="2927" vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="2108">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="2108">
+          <caret line="87" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/writeToFile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="72" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="595" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="595">
+          <caret line="26" column="72" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comReader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="62" selection-start="743" selection-end="743" vertical-scroll-proportion="0.0" vertical-offset="332" max-vertical-offset="918" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="918">
+          <caret line="40" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comFunctions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="0" selection-start="2927" selection-end="2927" vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="2040">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="2108">
+          <caret line="87" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/writeToFile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="71" selection-start="694" selection-end="694" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="578" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comReader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="62" selection-start="743" selection-end="743" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comFunctions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="36" selection-start="3594" selection-end="3594" vertical-scroll-proportion="0.0" vertical-offset="1666" max-vertical-offset="2040">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="595">
+          <caret line="26" column="72" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comReader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="62" selection-start="743" selection-end="743" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comFunctions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="36" selection-start="3594" selection-end="3594" vertical-scroll-proportion="0.0" vertical-offset="1666" max-vertical-offset="2040">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comReader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="62" selection-start="743" selection-end="743" vertical-scroll-proportion="0.0" vertical-offset="332" max-vertical-offset="918" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comFunctions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="36" selection-start="3594" selection-end="3594" vertical-scroll-proportion="0.0" vertical-offset="1666" max-vertical-offset="2108">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comReader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="62" selection-start="743" selection-end="743" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="918" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comFunctions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="36" selection-start="3594" selection-end="3594" vertical-scroll-proportion="0.0" vertical-offset="1666" max-vertical-offset="2108">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comReader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="62" selection-start="743" selection-end="743" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="918" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comFunctions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="36" selection-start="3594" selection-end="3594" vertical-scroll-proportion="0.0" vertical-offset="1666" max-vertical-offset="2108">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comReader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="62" selection-start="743" selection-end="743" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="918" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comReader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="31" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="901" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comFunctions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="36" selection-start="4463" selection-end="4463" vertical-scroll-proportion="0.0" vertical-offset="1972" max-vertical-offset="2091">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comReader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="31" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comFunctions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="36" selection-start="4463" selection-end="4463" vertical-scroll-proportion="0.0" vertical-offset="1972" max-vertical-offset="2091">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="332" max-vertical-offset="918">
+          <caret line="29" column="62" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comFunctions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="51" selection-start="4458" selection-end="4458" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2023">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="2040">
+          <caret line="87" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writeToFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="578">
+          <caret line="25" column="71" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comReader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+          <caret line="29" column="62" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comFunctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1666" max-vertical-offset="2040">
+          <caret line="98" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comReader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+          <caret line="29" column="62" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comFunctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1666" max-vertical-offset="2040">
+          <caret line="98" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comReader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="332" max-vertical-offset="918">
+          <caret line="29" column="62" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comFunctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1666" max-vertical-offset="2108">
+          <caret line="98" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comReader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="918">
+          <caret line="29" column="62" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comFunctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1666" max-vertical-offset="2108">
+          <caret line="98" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comReader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="918">
+          <caret line="29" column="62" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comFunctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1666" max-vertical-offset="2108">
+          <caret line="98" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comReader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="918">
+          <caret line="29" column="62" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comReader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="901">
+          <caret line="34" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comFunctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1972" max-vertical-offset="2091">
+          <caret line="116" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comReader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
+          <caret line="34" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comFunctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1972" max-vertical-offset="2091">
+          <caret line="116" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comFunctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2023">
+          <caret line="117" column="51" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apiFunctions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="8" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="867" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="867">
+          <caret line="18" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comReader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0" vertical-offset="337" max-vertical-offset="901" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="337" max-vertical-offset="901">
+          <caret line="45" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="12" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="833" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="833">
+          <caret line="5" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comFunctions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="34" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1734">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1734">
+          <caret line="11" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/writeToFile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comReader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="48" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="10" max-vertical-offset="612" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="10" max-vertical-offset="612">
+          <caret line="18" column="48" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comFunctions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="34" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1734">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1734">
+          <caret line="11" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/writeToFile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="45" selection-start="402" selection-end="450" vertical-scroll-proportion="0.0" vertical-offset="115" max-vertical-offset="595" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="115" max-vertical-offset="595">
+          <caret line="20" column="45" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comReader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="48" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <caret line="18" column="48" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comFunctions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="22" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1717">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1717">
+          <caret line="9" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/writeToFile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="29" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="527" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="527">
+          <caret line="16" column="29" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xively/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8262" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8262">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xively/managers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="18394" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="18394">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xively/client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1870" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1870">
+          <caret line="11" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/writeToFile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="72" selection-start="710" selection-end="710" vertical-scroll-proportion="0.7246892" vertical-offset="0" max-vertical-offset="563" />
+        <state vertical-scroll-proportion="0.7246892" vertical-offset="0" max-vertical-offset="563">
+          <caret line="26" column="72" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="29" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="850">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apiFunctions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="89" selection-start="1843" selection-end="1843" vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="850">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comReader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="61" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="287" max-vertical-offset="850">
+        <state vertical-scroll-proportion="0.0" vertical-offset="290" max-vertical-offset="850">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comFunctions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="44" selection-start="4057" selection-end="4057" vertical-scroll-proportion="0.539823" vertical-offset="1361" max-vertical-offset="2057">
+        <state vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="2142">
+          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comReader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="850">
+          <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apiFunctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2701252" vertical-offset="291" max-vertical-offset="850">
+          <caret line="28" column="86" selection-start-line="28" selection-start-column="86" selection-end-line="28" selection-end-column="86" />
           <folding />
         </state>
       </provider>

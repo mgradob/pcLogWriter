@@ -25,6 +25,7 @@ class WeatherLog:
     atmospheric_humidity = ''
     atmospheric_temperature = ''
     wind_speed = ''
+    evapotranspiration = ''
 
 
 # Generic pump log -----------------------------------------------------
@@ -37,7 +38,6 @@ class PumpLog:
 # Generic timeout log --------------------------------------------------
 class TimeoutLog:
     consolidate = ''
-    evapotraspiration = ''
     timeout_DAAD = ''
     timeout_DA55 = ''
     timeout_c = ''

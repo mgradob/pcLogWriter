@@ -38,7 +38,7 @@ def formatMoistureData(dataIn):
         # Get SOH
         handshakeLog.soh = str(int(dataIn[15]))
         # Get the EOT
-        handshakeLog.eot = str(int(dataIn[51])) #53
+        handshakeLog.eot = str(int(dataIn[53]))
 
         # Get Node1
         moistureLog1.node_id = str(int(dataIn[16]))
@@ -80,27 +80,28 @@ def formatMoistureData(dataIn):
         weatherLog.atmospheric_temperature = str(int(dataIn[35])) + '.' + str(int(dataIn[36]))
         # Get wind speed
         weatherLog.wind_speed = str(int(dataIn[37])) + '.' + str(int(dataIn[38]))
+        # Get evapotranspiration
+        weatherLog.evapotranspiration = str(int(dataIn[39])) + '.' + str(int(dataIn[40]))
 
         # Get Pump
-        pumpLog.node_id = str(int(dataIn[39]))
-        pumpLog.relay_status = str(int(dataIn[40]))
-        pumpLog.water_flow = str(int((dataIn[41] << 8) | dataIn[42]))
+        pumpLog.node_id = str(int(dataIn[41]))
+        pumpLog.relay_status = str(int(dataIn[42]))
+        pumpLog.water_flow = str(int(dataIn[43])) + '.' + str(int(dataIn[44]))
 
         # Get Timeouts
-        timeoutLog.consolidate = str(int(dataIn[44])) + '.' + str(int(dataIn[45]))
-        #timeoutLog.evapotraspiration = str(int(dataIn[46])) + '.' + str(int(dataIn[4]))
-        timeoutLog.timeout_DAAD = str(int(dataIn[46])) #48
-        timeoutLog.timeout_DA55 = str(int(dataIn[47])) #49
-        timeoutLog.timeout_c = str(int(dataIn[48])) #50
-        timeoutLog.timeout_climate_node = str(int(dataIn[49]))  #51
-        timeoutLog.timeout_pump_node = str(int(dataIn[50])) #52
+        timeoutLog.consolidate = str(int(dataIn[46])) + '.' + str(int(dataIn[47]))
+        timeoutLog.timeout_DAAD = str(int(dataIn[48]))
+        timeoutLog.timeout_DA55 = str(int(dataIn[49]))
+        timeoutLog.timeout_c = str(int(dataIn[50]))
+        timeoutLog.timeout_climate_node = str(int(dataIn[51]))
+        timeoutLog.timeout_pump_node = str(int(dataIn[52]))
 
         formattedData = timeoutLog.consolidate + ',' + moistureLog1.moisture1 + ',' + moistureLog1.moisture2 + ',' + \
                         moistureLog1.moisture3 + ',' + moistureLog2.moisture1 + ',' + moistureLog2.moisture2 + ',' + \
                         moistureLog2.moisture3 + ',' + weatherLog.radiation + ',' + weatherLog.atmospheric_humidity +\
                         "," + weatherLog.atmospheric_temperature + ',' + weatherLog.wind_speed + ',' +\
                         pumpLog.relay_status + ',' + timeoutLog.timeout_DAAD + ',' + timeoutLog.timeout_DA55 + ',' + \
-                        timeoutLog.timeout_c
+                        timeoutLog.timeout_c + ',' + timeoutLog.timeout_climate_node + ',' + timeoutLog.timeout_pump_node
 
         # Send data to Xively API
         now = datetime.datetime.utcnow()
