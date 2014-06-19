@@ -31,12 +31,13 @@ class WeatherLog:
 class PumpLog:
     node_id = ''
     relay_status = ''
-    pulse_count = ''
+    water_flow = ''
 
 
 # Generic timeout log --------------------------------------------------
 class TimeoutLog:
     consolidate = ''
+    evapotraspiration = ''
     timeout_DAAD = ''
     timeout_DA55 = ''
     timeout_c = ''

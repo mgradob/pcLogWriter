@@ -34,7 +34,7 @@ def send_weather_data(weather_log=Logs.WeatherLog, now=datetime):
 def send_pump_data(pump_log=Logs.PumpLog, now=datetime):
     feed.datastreams = [
         xively.Datastream('Pump_State', current_value=pump_log.relay_status, at=now),
-        xively.Datastream('Water_Flow', current_value=pump_log.pulse_count, at=now)
+        xively.Datastream('Water_Flow', current_value=pump_log.water_flow, at=now)
     ]
     feed.update()
 
@@ -42,5 +42,6 @@ def send_pump_data(pump_log=Logs.PumpLog, now=datetime):
 def send_consolidate_data(timeout_log=Logs.TimeoutLog, now=datetime):
     feed.datastreams = [
         xively.Datastream('Cons_Humidity', current_value=timeout_log.consolidate, at=now)
+        #xively.Datastream('Evapotranspiration', current_value=timeout_log.evapotraspiration, at=now)
     ]
     feed.update()
