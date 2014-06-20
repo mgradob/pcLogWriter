@@ -100,9 +100,9 @@ def formatMoistureData(dataIn):
                         moistureLog1.moisture3 + ',' + moistureLog2.moisture1 + ',' + moistureLog2.moisture2 + ',' + \
                         moistureLog2.moisture3 + ',' + weatherLog.radiation + ',' + weatherLog.atmospheric_humidity +\
                         ',' + weatherLog.atmospheric_temperature + ',' + weatherLog.wind_speed + ',' + \
-                        weatherLog.evapotranspiration + ',' + pumpLog.relay_status + ',' + timeoutLog.timeout_DAAD + ','\
-                        + timeoutLog.timeout_DA55 + ',' + timeoutLog.timeout_c + ',' + timeoutLog.timeout_climate_node +\
-                        ',' + timeoutLog.timeout_pump_node
+                        weatherLog.evapotranspiration + ',' + pumpLog.relay_status + ',' + pumpLog.water_flow + ','  \
+                        + timeoutLog.timeout_DAAD + ',' + timeoutLog.timeout_DA55 + ',' + timeoutLog.timeout_c + ',' \
+                        + timeoutLog.timeout_climate_node + ',' + timeoutLog.timeout_pump_node
 
         # Send data to Xively API
         now = datetime.datetime.utcnow()
