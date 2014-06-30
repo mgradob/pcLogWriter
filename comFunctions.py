@@ -45,51 +45,51 @@ def formatMoistureData(dataIn):
         # Set height1
         moistureLog1.height1 = 1
         # Get moistures1
-        moistureLog1.moisture1 = str(int(dataIn[17])) + '.' + str(int(dataIn[18]))
+        moistureLog1.moisture1 = str(dataIn[17] + dataIn[18]/100)
         # Set height2
         moistureLog1.height2 = 2
         # Get moistures2
-        moistureLog1.moisture2 = str(int(dataIn[19])) + '.' + str(int(dataIn[20]))
+        moistureLog1.moisture2 = str(dataIn[19] + dataIn[20]/100)
         # Set height3
         moistureLog1.height3 = 3
         # Get moistures3
-        moistureLog1.moisture3 = str(int(dataIn[21])) + '.' + str(int(dataIn[22]))
+        moistureLog1.moisture3 = str(dataIn[21] + dataIn[22]/100)
 
         # Get Node2
         moistureLog2.node_id = str(int(dataIn[23]))
         # Set height1
         moistureLog2.height1 = 1
         # Get moistures1
-        moistureLog2.moisture1 = str(int(dataIn[24])) + '.' + str(int(dataIn[25]))
+        moistureLog2.moisture1 = str(dataIn[24] + dataIn[25]/100)
         # Set height2
         moistureLog2.height = 2
         # Get moistures2
-        moistureLog2.moisture2 = str(int(dataIn[26])) + '.' + str(int(dataIn[27]))
+        moistureLog2.moisture2 = str(dataIn[26] + dataIn[27]/100)
         # Set height3
         moistureLog2.height3 = 3
         # Get moistures3
-        moistureLog2.moisture3 = str(int(dataIn[28])) + '.' + str(int(dataIn[29]))
+        moistureLog2.moisture3 = str(dataIn[28] + dataIn[29]/100)
 
         # Get Climate Node
         weatherLog.node_id = str(int(dataIn[30]))
         # Get radiation
         weatherLog.radiation = str(int((dataIn[31] << 8) | dataIn[32]))
         # Get atmospheric humidity
-        weatherLog.atmospheric_humidity = str(int(dataIn[33])) + '.' + str(int(dataIn[34]))
+        weatherLog.atmospheric_humidity = str(dataIn[33] + dataIn[34]/100)
         # Get atmospheric temperature
-        weatherLog.atmospheric_temperature = str(int(dataIn[35])) + '.' + str(int(dataIn[36]))
+        weatherLog.atmospheric_temperature = str(dataIn[35] + dataIn[36]/100)
         # Get wind speed
-        weatherLog.wind_speed = str(int(dataIn[37])) + '.' + str(int(dataIn[38]))
+        weatherLog.wind_speed = str(dataIn[37] + dataIn[38]/100)
         # Get evapotranspiration
-        weatherLog.evapotranspiration = str(int(dataIn[39])) + '.' + str(int(dataIn[40]))
+        weatherLog.evapotranspiration = str(dataIn[39] + dataIn[40]/100)
 
         # Get Pump
         pumpLog.node_id = str(int(dataIn[41]))
         pumpLog.relay_status = str(int(dataIn[42]))
-        pumpLog.water_flow = str(int(dataIn[43])) + '.' + str(int(dataIn[44]))
+        pumpLog.water_flow = str(dataIn[43] + dataIn[44]/100)
 
         # Get Timeouts
-        timeoutLog.consolidate = str(int(dataIn[46])) + '.' + str(int(dataIn[47]))
+        timeoutLog.consolidate = str(dataIn[46] + dataIn[47]/100)
         timeoutLog.timeout_DAAD = str(int(dataIn[48]))
         timeoutLog.timeout_DA55 = str(int(dataIn[49]))
         timeoutLog.timeout_c = str(int(dataIn[50]))
@@ -104,16 +104,21 @@ def formatMoistureData(dataIn):
                         + timeoutLog.timeout_DAAD + ',' + timeoutLog.timeout_DA55 + ',' + timeoutLog.timeout_c + ',' \
                         + timeoutLog.timeout_climate_node + ',' + timeoutLog.timeout_pump_node
 
+    except Exception:
+        print(str(datetime.datetime.now()) + ': Exception, invalid data received')
+        formattedData = 'i,i,i,i,i,i,i,i,i,i,i,i,i,i,i'
+
+
+    try:
         # Send data to Xively API
         now = datetime.datetime.utcnow()
         apiFunctions.send_moisture_data(moistureLog1, moistureLog2, now)
         apiFunctions.send_weather_data(weatherLog, now)
         apiFunctions.send_pump_data(pumpLog, now)
         apiFunctions.send_consolidate_data(timeoutLog, now)
-
     except Exception:
-        print(str(datetime.datetime.now()) + ': Exception, invalid data received')
-        formattedData = 'i,i,i,i,i,i,i,i,i,i,i,i,i,i,i'
+        print(str(datetime.datetime.now()) + ': Exception, did not send data to Xively')
+
 
     try:
         return formattedData

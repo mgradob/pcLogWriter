@@ -9,7 +9,6 @@ feed = api.feeds.get(1129833362)
 
 
 def send_moisture_data(moisture_log_1=Logs.MoistureLog, moisture_log_2=Logs.MoistureLog, now=datetime):
-    now = datetime.datetime.utcnow()
     feed.datastreams = [
         xively.Datastream('HM1_S1', current_value=moisture_log_1.moisture1, at=now),
         xively.Datastream('HM2_S1', current_value=moisture_log_1.moisture2, at=now),
