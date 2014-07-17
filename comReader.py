@@ -2,13 +2,18 @@ __author__ = 'Adriana'
 
 import serial
 import comFunctions
-from writeToFile import *
+import writeToFile
 import datetime
 import time
+import Logs
+import grapher
+
+graph_data_list = []
 
 print("Available ports:\n")
 
-portList = comFunctions.getAvailablePorts()
+com_handler = comFunctions.ComFunctions()
+portList = com_handler.getAvailablePorts()
 
 if len(portList) < 1:
     print("No COM ports found")
@@ -36,13 +41,19 @@ else:
         if serialPort.isOpen():
             dataIn = (serialPort.read(size=55))
 
-            formattedData = comFunctions.formatMoistureData(dataIn)
+            formattedData = com_handler.formatMoistureData(dataIn)
 
             print(str(datetime.datetime.now()) + ': ' + formattedData)
 
             writeToFile(formattedData)
 
             serialPort.close()
+
+            if graph_data_list.count() < 10100:
+                graph_data_list.append(com_handler.graph_data)
+            else:
+                for item in graph_data_list:
+                    graph_data_list.remove(item)
 
         else:
             writeToFile(formattedData)

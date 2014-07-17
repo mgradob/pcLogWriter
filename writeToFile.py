@@ -1,6 +1,5 @@
 __author__ = 'Adriana'
 
-from time import strftime
 import datetime
 import os
 

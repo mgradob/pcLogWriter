@@ -43,3 +43,9 @@ class TimeoutLog:
     timeout_c = ''
     timeout_climate_node = ''
     timeout_pump_node = ''
+
+# Evapotranspiration log for data graph --------------------------------
+class GraphData():
+    def __init__(self, eto, date):
+        self.eto = eto
+        self.date = date
