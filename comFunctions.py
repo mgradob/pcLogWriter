@@ -1,28 +1,34 @@
+import sys
+
 __author__ = 'Adriana'
 
 import serial
 import datetime
 import Logs
 import apiFunctions
+import writeToFile
 
 class ComFunctions():
-    # Get a list of available COM ports in the system ------------------
-    comInSystem = []
-    graph_data = None
-
     def __init__(self):
         pass
 
+    def get_graph_data(self):
+        return self.graph_data
+
+    # Get a list of available COM ports in the system ------------------
     def getAvailablePorts(self):
+        comInSystem = []
         for i in range(0, 255):
             try:
                 avPort = serial.Serial(i)
-                self.comInSystem.append("COM" + str(i+1))
+                comInSystem.append("COM" + str(i+1))
                 avPort.close()
             except serial.SerialException:
                 pass
 
-        return self.comInSystem
+        return comInSystem
+    #-------------------------------------------------------------------
+
 
     # Format received string -------------------------------------------
     def formatMoistureData(self, dataIn):
@@ -103,19 +109,16 @@ class ComFunctions():
                             moistureLog1.moisture3 + ',' + moistureLog2.moisture1 + ',' + moistureLog2.moisture2 + ',' + \
                             moistureLog2.moisture3 + ',' + weatherLog.radiation + ',' + weatherLog.atmospheric_humidity +\
                             ',' + weatherLog.atmospheric_temperature + ',' + weatherLog.wind_speed + ',' + \
-                            weatherLog.evapotranspiration + ',' + pumpLog.relay_status + ',' + pumpLog.water_flow + ','  \
+                            weatherLog.evapotranspiration + ',' + pumpLog.relay_status + ',' + pumpLog.water_flow + ',' \
                             + timeoutLog.timeout_DAAD + ',' + timeoutLog.timeout_DA55 + ',' + timeoutLog.timeout_c + ',' \
                             + timeoutLog.timeout_climate_node + ',' + timeoutLog.timeout_pump_node
-
-            self.graph_data = Logs.GraphData(weatherLog.evapotranspiration, datetime.datetime.now())
-
         except Exception:
+            print(sys.exc_info())
             print(str(datetime.datetime.now()) + ': Exception, invalid data received')
             formattedData = 'i,i,i,i,i,i,i,i,i,i,i,i,i,i,i'
 
-
+        # Send data to Xively API
         try:
-            # Send data to Xively API
             now = datetime.datetime.utcnow()
             apiFunctions.send_moisture_data(moistureLog1, moistureLog2, now)
             apiFunctions.send_weather_data(weatherLog, now)
@@ -124,6 +127,7 @@ class ComFunctions():
         except Exception:
             print(str(datetime.datetime.now()) + ': Exception, did not send data to Xively')
 
+        writeToFile.write_graph_file(str(weatherLog.evapotranspiration))
 
         try:
             return formattedData

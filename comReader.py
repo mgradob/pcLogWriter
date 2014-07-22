@@ -5,16 +5,11 @@ import comFunctions
 import writeToFile
 import datetime
 import time
-import Logs
-import grapher
 
-graph_data_list = []
+com_functions = comFunctions.ComFunctions()
 
 print("Available ports:\n")
-
-com_handler = comFunctions.ComFunctions()
-portList = com_handler.getAvailablePorts()
-
+portList = com_functions.getAvailablePorts()
 if len(portList) < 1:
     print("No COM ports found")
 else:
@@ -41,19 +36,13 @@ else:
         if serialPort.isOpen():
             dataIn = (serialPort.read(size=55))
 
-            formattedData = com_handler.formatMoistureData(dataIn)
+            formattedData = com_functions.formatMoistureData(dataIn)
 
             print(str(datetime.datetime.now()) + ': ' + formattedData)
 
-            writeToFile(formattedData)
+            writeToFile.writeToFile(formattedData)
 
             serialPort.close()
 
-            if graph_data_list.count() < 10100:
-                graph_data_list.append(com_handler.graph_data)
-            else:
-                for item in graph_data_list:
-                    graph_data_list.remove(item)
-
         else:
-            writeToFile(formattedData)
+            writeToFile.writeToFile(formattedData)

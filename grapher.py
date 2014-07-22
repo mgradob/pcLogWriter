@@ -36,4 +36,3 @@ def graph_data(log_data):
     line_chart.add('Eto', eto_values_list)
     line_chart.render_to_file('chart.svg')
 
-#graph_data(list1)

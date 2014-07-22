@@ -26,4 +26,17 @@ def writeToFile(dataToWrite):
              file.write(dataToWrite + "," + str(datetime.datetime.now()) + '\n')
 
     print("Data written successfully")
+
+def write_graph_file(data_to_write):
+    if os.path.exists(os.path.abspath('graphDataLog.txt')):
+        with open('graphDataLog.txt', 'a+') as file:
+             #print(dataToWrite)
+             file.write(data_to_write + "," + str(datetime.datetime.now()) + '\n')
+    else:
+        print('Log file created')
+        with open("graphDataLog.txt", 'w') as file:
+             #print(dataToWrite)
+             file.write(data_to_write + "," + str(datetime.datetime.now()) + '\n')
+
+    print("Graph file written successfully")
 #-------------------------------------------------------------------

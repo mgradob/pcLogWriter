@@ -46,6 +46,5 @@ class TimeoutLog:
 
 # Evapotranspiration log for data graph --------------------------------
 class GraphData():
-    def __init__(self, eto, date):
-        self.eto = eto
-        self.date = date
+    eto = ''
+    date = ''
