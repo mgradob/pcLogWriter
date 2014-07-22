@@ -1,3 +1,5 @@
+import string
+
 __author__ = 'Miguel'
 
 import pygal
@@ -15,24 +17,22 @@ import Logs
 # list1.append(Logs.GraphData(23.33, '2014-06-24 12:08:23.731817'))
 
 
-def graph_data(log_data):
-    print(log_data)
-
-    dates_list = []
-    eto_values_list = []
-
-    # Organize data
-    for date_val in log_data:
-        dates_list.append(date_val.date)
-    for eto_val in log_data:
-        eto_values_list.append(eto_val.eto)
-    print(dates_list)
-    print(eto_values_list)
-
+def graph_data(data_list, date_list):
     # Draw the graph and render it
     line_chart = pygal.StackedLine(fill=True)
     line_chart.title = 'Evapotranspiration'
-    line_chart.x_labels = dates_list
-    line_chart.add('Eto', eto_values_list)
+    line_chart.x_labels = date_list
+    line_chart.add('Eto', data_list)
     line_chart.render_to_file('chart.svg')
+    print('Graph created')
 
+
+data_arr = []
+date_arr = []
+file = open('graphDataLog.txt', 'r')
+for line in file:
+    line_arr = line.split(',')
+    data_arr.append(float(line_arr[0]))
+    date_arr.append(line_arr[1].rstrip('\n'))
+
+graph_data(data_arr, date_arr)

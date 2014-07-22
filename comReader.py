@@ -15,7 +15,7 @@ if len(portList) < 1:
 else:
     print(portList)
     print("Select a COM port:\nCOM")
-    selectedPort = int(input())-1
+    selectedPort = 3
     formattedData = ''
 
     while 1:
