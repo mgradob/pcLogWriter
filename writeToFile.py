@@ -15,28 +15,36 @@ def getDate():
     return date
 
 def writeToFile(dataToWrite):
-    if os.path.exists(os.path.abspath('dataLog.txt')):
-        with open('dataLog.txt', 'a+') as file:
-             #print(dataToWrite)
-             file.write(dataToWrite + "," + str(datetime.datetime.now()) + '\n')
-    else:
-        print('Log file created')
-        with open("dataLog.txt", 'w') as file:
-             #print(dataToWrite)
-             file.write(dataToWrite + "," + str(datetime.datetime.now()) + '\n')
+    try:
+        if os.path.exists(os.path.abspath('dataLog.txt')):
+            with open('dataLog.txt', 'a+') as file:
+                 #print(dataToWrite)
+                 file.write(dataToWrite + "," + str(datetime.datetime.now()) + '\n')
+        else:
+            print('Log file created')
+            with open("dataLog.txt", 'w') as file:
+                 #print(dataToWrite)
+                 file.write(dataToWrite + "," + str(datetime.datetime.now()) + '\n')
+        print("Data file written successfully")
 
-    print("Data written successfully")
+    except Exception:
+        print("Cannot open data file, data not writen")
+
 
 def write_graph_file(data_to_write):
-    if os.path.exists(os.path.abspath('graphDataLog.txt')):
-        with open('graphDataLog.txt', 'a+') as file:
-             #print(dataToWrite)
-             file.write(data_to_write + "," + str(datetime.datetime.now()) + '\n')
-    else:
-        print('Log file created')
-        with open("graphDataLog.txt", 'w') as file:
-             #print(dataToWrite)
-             file.write(data_to_write + "," + str(datetime.datetime.now()) + '\n')
+    try:
+        if os.path.exists(os.path.abspath('graphDataLog.txt')):
+            with open('graphDataLog.txt', 'a+') as file:
+                 #print(dataToWrite)
+                 file.write(data_to_write + "," + str(datetime.datetime.now()) + '\n')
+        else:
+            print('Log file created')
+            with open("graphDataLog.txt", 'w') as file:
+                 #print(dataToWrite)
+                 file.write(data_to_write + "," + str(datetime.datetime.now()) + '\n')
 
-    print("Graph file written successfully")
+        print("Graph file written successfully")
+
+    except Exception:
+        print("Cannot open graph file, data not writen")
 #-------------------------------------------------------------------
